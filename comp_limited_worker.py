@@ -43,7 +43,7 @@ def asyncio_tasks(counts, ev_loop):
 if __name__ == '__main__':
     ev_loop = asyncio.get_event_loop()
 
-    # compare with sequencial tasks execution
+    # compare with concurrent tasks execution
     counts = limited_worker
     concurrent_tasks(counts)
     asyncio_tasks(counts, ev_loop)
